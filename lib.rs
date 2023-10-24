@@ -14,7 +14,7 @@ pub mod my_psp22 {
 		#[storage_field]
 		ownable: ownable::Data,
     }
-    
+    // The WrathToken takes in a i32 Balance as its initial supply
     impl WrathToken {
         #[ink(constructor)]
         pub fn new(initial_supply: Balance) -> Self {
